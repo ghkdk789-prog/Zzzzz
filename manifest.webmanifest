@@ -1,0 +1,16 @@
+{
+  "name": "Архив Разбитой души",
+  "short_name": "Архив души",
+  "description": "Личный PWA-архив сцен, персонажей, лора и нерешённых вопросов.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b0d12",
+  "theme_color": "#111722",
+  "lang": "ru",
+  "icons": [
+    { "src": "icons/icon-192.svg", "sizes": "192x192", "type": "image/svg+xml", "purpose": "any maskable" },
+    { "src": "icons/icon-512.svg", "sizes": "512x512", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
