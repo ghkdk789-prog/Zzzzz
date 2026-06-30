@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111722">
+  <meta name="description" content="Личный PWA-архив для работы над серией книг «Разбитая душа».">
+  <title>Архив Разбитой души</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="rain"></div>
+  <header class="hero">
+    <p class="eyebrow">Личный архив писателя</p>
+    <h1>Архив Разбитой души</h1>
+    <p class="subtitle">Сцены, люди, память и всё, что ещё нельзя назвать истиной</p>
+    <label class="search"><span>Поиск</span><input id="globalSearch" type="search" placeholder="Искать по сценам, персонажам, лору, статусам…"></label>
+    <div class="quick-actions">
+      <button data-quick="scenes">Новая сцена</button>
+      <button data-quick="characters">Новый персонаж</button>
+      <button data-quick="lore">Новая запись лора</button>
+      <button data-quick="unresolved">Неразрешённое</button>
+    </div>
+    <div id="stats" class="stats"></div>
+  </header>
+
+  <nav id="tabs" class="tabs" aria-label="Разделы"></nav>
+
+  <main>
+    <section id="sectionIntro" class="panel intro-card">
+      <h2>Пустой архив готов</h2>
+      <p>Здесь нет выдуманных сцен, персонажей или лора — только структура, шаблоны и локальное сохранение на вашем телефоне.</p>
+    </section>
+    <section id="content" class="panel"></section>
+  </main>
+
+  <dialog id="editorDialog">
+    <form method="dialog" id="editorForm" class="editor">
+      <header><h2 id="editorTitle">Запись</h2><button type="button" value="cancel" class="icon-btn" aria-label="Закрыть">×</button></header>
+      <div id="editorFields" class="fields"></div>
+      <menu><button type="button" value="cancel" id="cancelEdit">Отмена</button><button id="saveRecord" value="default" class="primary">Сохранить</button></menu>
+    </form>
+  </dialog>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
